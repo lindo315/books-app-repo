@@ -1,0 +1,110 @@
+/* src/styles/Confirmation.css */
+.confirmation {
+  max-width: 600px;
+  margin: 10rem auto;
+  padding: 2rem;
+  background-color: var(--background);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.confirmation h2 {
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.order-summary {
+  background-color: var(--accent1);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.order-summary h3 {
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+}
+
+.order-total {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--accent2);
+}
+
+.order-total h4 {
+  color: var(--secondary);
+  text-align: right;
+}
+
+.confirmation form {
+  display: flex;
+  flex-direction: column;
+}
+
+.confirmation input,
+.confirmation textarea {
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border: 1px solid var(--accent1);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.confirmation textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.confirmation button {
+  background-color: var(--primary);
+  color: var(--background);
+  border: none;
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.confirmation button:hover {
+  background-color: var(--secondary);
+}
+
+@media (max-width: 600px) {
+  .confirmation {
+    padding: 1.5rem;
+  }
+
+  .order-summary {
+    padding: 1rem;
+  }
+}
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: var(--primary);
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+.back-btn svg {
+  margin-right: 0.5rem;
+}
+
+.back-btn:hover {
+  color: var(--secondary);
+}

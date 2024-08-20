@@ -1,0 +1,65 @@
+/* src/styles/Contacts.css */
+.contacts {
+  padding: 4rem 2rem;
+  background-color: var(--background);
+}
+
+.contacts h2 {
+  text-align: center;
+  color: var(--secondary);
+  margin-bottom: 2rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+.contact-item a,
+.contact-item address {
+  color: var(--text-dark);
+  text-decoration: none;
+  font-style: normal;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: var(--primary);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-links a {
+  color: var(--secondary);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--primary);
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    padding: 3rem 1rem;
+  }
+}

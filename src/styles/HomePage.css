@@ -1,0 +1,44 @@
+/* src/styles/HomePage.css */
+.home-page {
+  /* padding: 50px; */
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.content {
+  flex: 1;
+  z-index: 1;
+  color: #ffffff;
+  max-width: 50%;
+}
+
+.content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
